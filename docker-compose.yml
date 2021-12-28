@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+    dogecoin-core:
+        build: .
+        volumes:
+            - ./data:/home/dogecoin/.dogecoin
+            - ./dogecoin.conf:/home/dogecoin/.dogecoin/dogecoin.conf
+        ports:
+            - 22555:22555
+        command:
+            -printtoconsole
+        networks:
+            aban-net:
+                aliases:
+                   - dogecoin-core 
+                ipv4_address: 172.18.0.9
+networks:
+    aban-net:
+        external: true

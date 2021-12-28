@@ -1,0 +1,1 @@
+curl --data-binary '{"jsonrpc":"1.0","id":"1","method":"getblockchaininfo","params":[]}' http://moosool:SflwvW1ZatMrz3mTnWC5UZHsluDJ8UK8Lwadu2JdgA0=@127.0.0.1:22555/
