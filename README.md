@@ -1,10 +1,12 @@
 # doge-coin-docker
 
 docker-compose build
+
 docker-compose up -d
 
 
 you can use this command to open docker container and use dogecoin-cli :
+
 sudo bash open-cli.sh 
 
 take look at block_chain_info.sh to see rpc request structure
